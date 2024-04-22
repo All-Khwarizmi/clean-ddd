@@ -1,8 +1,9 @@
 {
   "name": "clean-ddd",
   "displayName": "Clean DDD",
-  "description": "",
+  "description": "An opinionated vscode extension for project scaffolding",
   "version": "0.0.1",
+  "repository": "https://github.com/All-Khwarizmi/clean-ddd",
   "engines": {
     "vscode": "^1.88.0"
   },
