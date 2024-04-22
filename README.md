@@ -10,7 +10,7 @@ Clean DDD is an opinionated Visual Studio Code extension designed to enhance you
 
 ## Installation
 To install Clean DDD, follow these steps:
-1. Open Visual Studio Code.
+1. Open Visual Studio Code or go to [Clean DDD](https://marketplace.visualstudio.com/items?itemName=CleanDDD.clean-ddd)
 2. Navigate to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl+Shift+X`.
 3. Search for `Clean DDD`.
 4. Click on `Install` to install the extension.
