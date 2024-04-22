@@ -1,4 +1,3 @@
-
 import * as vscode from "vscode";
 
 const { workspace } = vscode;
@@ -18,7 +17,11 @@ async function createDirectories(baseUri: vscode.Uri, featureName: string) {
   ];
 
   for (const folder of folders) {
-    const folderPath = vscode.Uri.joinPath(baseUri, featureName, folder);
+    const folderPath = vscode.Uri.joinPath(
+      baseUri,
+      featureName.toLowerCase(),
+      folder
+    );
     await workspace.fs.createDirectory(folderPath);
   }
 }
