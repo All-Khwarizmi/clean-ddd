@@ -1,6 +1,7 @@
 {
   "name": "clean-ddd",
   "displayName": "Clean DDD",
+  "publisher": "CleanDDD",
   "description": "An opinionated vscode extension for project scaffolding",
   "version": "0.0.1",
   "repository": "https://github.com/All-Khwarizmi/clean-ddd",
