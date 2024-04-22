@@ -2,19 +2,35 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {
-  //   let disposable = vscode.commands.registerCommand("clean-ddd.activate", () => {
-  //     vscode.window.showInformationMessage("Hello World from Clean DDD!");
-  //   });
+const { workspace } = vscode;
 
+async function createDirectories(baseUri: vscode.Uri) {
+  const folders = [
+    "feature/presentation/views",
+    "feature/presentation/components",
+    "feature/presentation/layout",
+    "feature/application/usecases",
+    "feature/application/repositories",
+    "feature/application/adapters",
+    "feature/domain/entities",
+    "feature/domain/value objects",
+    "feature/infra/dto's",
+    "feature/infra/services",
+  ];
+
+  for (const folder of folders) {
+    const folderPath = vscode.Uri.joinPath(baseUri, folder);
+    await workspace.fs.createDirectory(folderPath);
+  }
+}
+export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
     "clean-ddd.createFeature",
     (uri: vscode.Uri) => {
-      // `uri` is the file or folder path on which the user right-clicked
-      vscode.window.showInformationMessage(`Creating feature at ${uri.fsPath}`);
-      createFeature(uri);
+      createDirectories(uri);
+      vscode.window.showInformationMessage(
+        "Feature structure created successfully!"
+      );
     }
   );
 
