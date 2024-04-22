@@ -12,6 +12,7 @@
     "color": "#007ACC",
     "theme": "dark"
   },
+  "icon": "src/public/icon.png",
   "categories": [
     "Other"
   ],
