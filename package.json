@@ -9,15 +9,33 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:clean-ddd.createFeature"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "clean-ddd.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "clean-ddd.createFeature",
+        "title": "Create Feature"
+      },
+      {
+        "command": "clean-ddd.activate",
+        "title": "Activate"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "clean-ddd.createFeature",
+          "group": "clean-ddd"
+        }]
+    }
   },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
