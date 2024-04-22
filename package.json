@@ -9,23 +9,13 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:clean-ddd.createFeature"
-  ],
+  "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "clean-ddd.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "clean-ddd.createFeature",
         "title": "Create Feature"
-      },
-      {
-        "command": "clean-ddd.activate",
-        "title": "Activate"
       }
     ],
     "menus": {
@@ -34,7 +24,8 @@
           "when": "explorerResourceIsFolder",
           "command": "clean-ddd.createFeature",
           "group": "clean-ddd"
-        }]
+        }
+      ]
     }
   },
   "scripts": {
