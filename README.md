@@ -1,71 +1,39 @@
-# clean-ddd README
+# Clean DDD - Visual Studio Code Extension
 
-This is the README for your extension "clean-ddd". After writing up a brief description, we recommend including the following sections.
+## Overview
+Clean DDD is an opinionated Visual Studio Code extension designed to enhance your software development process by providing quick and easy project scaffolding based on Clean Architecture and Domain-Driven Design principles. This tool automates the creation of a well-structured project layout, allowing you to focus on writing meaningful code rather than setting up the project.
 
 ## Features
+- **Quick Scaffolding**: Right-click on any folder in your workspace to create a new feature with a predefined structure.
+- **Clean Architecture Setup**: Automatically sets up directories for `Presentation`, `Application`, `Domain`, and `Infrastructure` layers.
+- **Domain-Driven Design**: Encourages software development according to domain-driven design principles by organizing the project structure around the business domain.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Installation
+To install Clean DDD, follow these steps:
+1. Open Visual Studio Code.
+2. Navigate to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl+Shift+X`.
+3. Search for `Clean DDD`.
+4. Click on `Install` to install the extension.
 
-For example if there is an image subfolder under your extension project workspace:
+## Usage
+To use Clean DDD, simply right-click on any folder in your Explorer where you want to create a new feature:
+1. Right-click on the folder.
+2. Select `Create Feature`.
+3. Enter the name of the feature when prompted.
+4. The extension will automatically create the necessary subfolders and files.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Requirements
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## Contact
+Your Name - [suarezjason@icloud.com](mailto:your-email@example.com)  
+Project Link: [https://github.com/All-Khwarizmi/clean-ddd](https://github.com/All-Khwarizmi/clean-ddd)
