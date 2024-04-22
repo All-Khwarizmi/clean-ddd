@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
     (uri: vscode.Uri) => {
       vscode.window
         .showInputBox({ prompt: "Enter Feature Name:" })
-        .then((featureName) => {
+        .then((featureName: string) => {
           if (!featureName) {
             vscode.window.showInformationMessage("Feature creation cancelled.");
             return;
