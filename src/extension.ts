@@ -10,9 +10,10 @@ async function createDirectories(baseUri: vscode.Uri, featureName: string) {
     "/application/usecases",
     "/application/repositories",
     "/application/adapters",
+    "/application/adapters/services",
     "/domain/entities",
     "/domain/value objects",
-    "/infra/dto's",
+    "/infra/dtos",
     "/infra/services",
   ];
 
@@ -37,10 +38,12 @@ export function activate(context: vscode.ExtensionContext) {
             return;
           }
           createDirectories(uri, featureName);
-        });
-      vscode.window.showInformationMessage(
-        "Feature structure created successfully!"
-      );
+
+          vscode.window.showInformationMessage(
+            `Feature ${featureName} created successfully`
+          );
+        })
+       
     }
   );
 
