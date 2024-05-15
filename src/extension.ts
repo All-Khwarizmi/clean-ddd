@@ -29,21 +29,20 @@ async function createDirectories(baseUri: vscode.Uri, featureName: string) {
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
     "clean-ddd.createFeature",
-    (uri: vscode.Uri) => {
+    async (uri: vscode.Uri) => {
       vscode.window
         .showInputBox({ prompt: "Enter Feature Name:" })
-        .then((featureName: string | undefined) => {
+        .then(async (featureName: string | undefined) => {
           if (!featureName) {
             vscode.window.showInformationMessage("Feature creation cancelled.");
             return;
           }
-          createDirectories(uri, featureName);
+          await createDirectories(uri, featureName);
 
           vscode.window.showInformationMessage(
             `Feature ${featureName} created successfully`
           );
-        })
-       
+        });
     }
   );
 
