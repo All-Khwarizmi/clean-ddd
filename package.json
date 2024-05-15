@@ -3,7 +3,7 @@
   "displayName": "Clean DDD",
   "publisher": "CleanDDD",
   "description": "An opinionated vscode extension for project scaffolding",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "repository": "https://github.com/All-Khwarizmi/clean-ddd",
   "engines": {
     "vscode": "^1.88.0"
